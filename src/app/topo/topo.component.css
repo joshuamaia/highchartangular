@@ -1,0 +1,13 @@
+.container {
+  margin-bottom: 20px;
+  background: #4169e1;
+  color: white;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #0000ff;
+}

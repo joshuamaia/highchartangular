@@ -1,0 +1,27 @@
+<mat-sidenav-container class="container">
+  <button mat-button [matMenuTriggerFor]="barraMenu">Gráficos de Barra</button>
+  <mat-menu #barraMenu="matMenu" yPosition="above">
+    <button mat-menu-item [routerLink]="['/barrabasico']">Básico</button>
+    <button mat-menu-item [routerLink]="['/barradrill']">Com Drill</button>
+  </mat-menu>
+
+  <button mat-button [matMenuTriggerFor]="areaMenu">Gráficos de Área</button>
+  <mat-menu #areaMenu="matMenu" yPosition="above">
+    <button mat-menu-item [routerLink]="['/areabasico']">Básico</button>
+    <button mat-menu-item [routerLink]="['/areaporcentagem']">
+      Com Porcentagem
+    </button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="linhaMenu">Gráficos de Linha</button>
+  <mat-menu #linhaMenu="matMenu" yPosition="above">
+    <button mat-menu-item [routerLink]="['/linhabasico']">Básico</button>
+    <button mat-menu-item [routerLink]="['/linhacomcanotacoes']">
+      Com Anotações
+    </button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="pizzaMenu">Gráficos de Pizza</button>
+  <mat-menu #pizzaMenu="matMenu" yPosition="above">
+    <button mat-menu-item [routerLink]="['/pizzabasico']">Básico</button>
+    <button mat-menu-item [routerLink]="['/pizzadrill']">Com Drill</button>
+  </mat-menu>
+</mat-sidenav-container>
