@@ -48,6 +48,17 @@ export class BarracomdrilComponent implements OnInit {
         dataLabels: {
           enabled: true,
           format: '{point.y:.1f}%'
+        },
+        point: {
+          events: {
+            click: function() {
+              if (this.options.url != null) {
+                location.href = this.options.url;
+              } else {
+                location.href = 'https://www.yahoo.com/';
+              }
+            }
+          }
         }
       }
     },
@@ -107,24 +118,24 @@ export class BarracomdrilComponent implements OnInit {
           name: 'Chrome',
           id: 'Chrome',
           data: [
-            ['v65.0', 0.1],
-            ['v64.0', 1.3],
-            ['v63.0', 53.02],
-            ['v62.0', 1.4],
-            ['v61.0', 0.88],
-            ['v60.0', 0.56],
-            ['v59.0', 0.45],
-            ['v58.0', 0.49],
-            ['v57.0', 0.32],
-            ['v56.0', 0.29],
-            ['v55.0', 0.79],
-            ['v54.0', 0.18],
-            ['v51.0', 0.13],
-            ['v49.0', 2.16],
-            ['v48.0', 0.13],
-            ['v47.0', 0.11],
-            ['v43.0', 0.17],
-            ['v29.0', 0.26]
+            { name: 'v65.0', y: 0.1, url: 'http://www.google.com' },
+            { name: 'v64.0', y: 1.3, url: 'http://www.google.com' },
+            { name: 'v63.0', y: 53.02, url: 'http://www.google.com' },
+            { name: 'v62.0', y: 1.4, url: 'http://www.google.com' },
+            { name: 'v61.0', y: 0.88, url: 'http://www.google.com' },
+            { name: 'v60.0', y: 0.56, url: 'http://www.google.com' },
+            { name: 'v59.0', y: 0.45, url: 'http://www.google.com' },
+            { name: 'v58.0', y: 0.49, url: 'http://www.google.com' },
+            { name: 'v57.0', y: 0.32, url: 'http://www.google.com' },
+            { name: 'v56.0', y: 0.29, url: 'http://www.google.com' },
+            { name: 'v55.0', y: 0.79, url: 'http://www.google.com' },
+            { name: 'v54.0', y: 0.18, url: 'http://www.google.com' },
+            { name: 'v51.0', y: 0.13, url: 'http://www.google.com' },
+            { name: 'v49.0', y: 2.16, url: 'http://www.google.com' },
+            { name: 'v48.0', y: 0.13, url: 'http://www.google.com' },
+            { name: 'v47.0', y: 0.11, url: 'http://www.google.com' },
+            { name: 'v43.0', y: 0.17, url: 'http://www.google.com' },
+            { name: 'v29.0', y: 0.26, url: 'http://www.google.com' }
           ]
         },
         {
