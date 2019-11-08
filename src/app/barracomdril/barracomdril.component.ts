@@ -120,7 +120,7 @@ export class BarracomdrilComponent implements OnInit {
           data: [
             { name: 'v65.0', y: 0.1, url: 'http://www.google.com' },
             { name: 'v64.0', y: 1.3, url: 'http://www.google.com' },
-            { name: 'v63.0', y: 53.02, url: 'http://www.google.com' },
+            { name: 'v63.0', y: 53.02, url: 'http://www.netvasco.com.br/' },
             { name: 'v62.0', y: 1.4, url: 'http://www.google.com' },
             { name: 'v61.0', y: 0.88, url: 'http://www.google.com' },
             { name: 'v60.0', y: 0.56, url: 'http://www.google.com' },
@@ -131,7 +131,7 @@ export class BarracomdrilComponent implements OnInit {
             { name: 'v55.0', y: 0.79, url: 'http://www.google.com' },
             { name: 'v54.0', y: 0.18, url: 'http://www.google.com' },
             { name: 'v51.0', y: 0.13, url: 'http://www.google.com' },
-            { name: 'v49.0', y: 2.16, url: 'http://www.google.com' },
+            { name: 'v49.0', y: 2.16, url: 'http://www.lakersbrasil.com/' },
             { name: 'v48.0', y: 0.13, url: 'http://www.google.com' },
             { name: 'v47.0', y: 0.11, url: 'http://www.google.com' },
             { name: 'v43.0', y: 0.17, url: 'http://www.google.com' },
